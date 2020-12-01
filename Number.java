@@ -12,4 +12,18 @@ public abstract class Number{
       return false;
     }
   }
+
+  public int compareTo(Number other) {
+    double thisValue = this.getValue();
+    double otherValue = other.getValue();
+    if(thisValue == otherValue) {
+      return 0;
+    }
+    else if (thisValue < otherValue) {
+      return -1;
+    }
+    else{
+      return 1;
+    }
+  }
 }
